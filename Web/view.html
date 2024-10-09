@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Blockchain Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.7.0/dist/web3.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <nav class="tab-bar">
+        <a href="create.html">Create New Chain</a>
+        <a href="update.html">Update Chain</a>
+        <a href="view.html">View Data</a>
+        <a href="customer.html">Customer History</a>
+    </nav>
+    
+    <div class="container">
+        <h1>View Blockchain Data</h1>
+        <div id="errorDisplay" class="error-display"></div>
+        <form id="getProductUpdatesForm">
+            <button id="showBlocks">Show Blockchain Info</button>
+        </form>
+        <div id="updates">
+            <ul id="blocksList"></ul>
+        </div>
+    </div>
+</body>
+</html>
